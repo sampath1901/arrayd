@@ -2,14 +2,14 @@
 struct employee{
     char empname[20];
     long int empn0;
-	int age;
-	long  int salary ;
-}s[1];
+    int age;
+    long  int salary ;
+}s[20];
 void main()
 {
 	int i,j;
 	printf("enter information of 20 employees\n");
-	for(i=0;i<1;i++)
+	for(i=0;i<20;i++)
 	{
 		printf("enter name of employee\n");
 		scanf("%s",&s[i].empname);
@@ -21,7 +21,7 @@ void main()
 		scanf("%li",&s[i].salary);
 	}
    printf("NAME\tAGE\tPHONENUMBER\tSALARY\n");
-   for(j=0;j<1;j++)
+   for(j=0;j<20;j++)
    {
    	printf("%s\t%d\t%lu\t%lu",s[j].empname,s[j].age,s[j].empn0,s[j].salary);
    }	
